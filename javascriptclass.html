@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Class</title>
+    </head>
+    <body id="myBody">
+       <h1><marquee behavior="" direction="" id="myText2" style="color: bisque;">Grading System</marquee></h1>
+       <input type="text"id="myScore" style="height: 50px; width: 200px;">
+        <button onclick="grade()" style="height: 50px; width: 100px;">grade</button>
+        <p style="color: red; font-size: 60px;" id="result"></p>
+        <script>
+
+           function grade () {
+              var score = myScore.value;
+                if (score < 0 || score > 100) {
+                    result.innerText = "Out of range";
+                } else if (score <= 39) {
+                    result.innerText = "Fail";
+                } else if (score <= 40 && score <= 44) {
+                    result.innerText = "pass";
+                } else if (score <= 49) {
+                    result.innerText = "fair";
+                } else if (score <= 59) {
+                    result.innerText = "average";
+                } else if (score <= 69) {
+                    result.innerText = "good";
+                } else if (score <= 100) {
+                    result.innerText = "excellent";
+                } else if (score = Text) {
+                    result.innerText = "not a number";
+                }
+
+
+            
+           }
+
+        //  0 - 39 = fail;
+		// 40 - 44 = pass;
+		// 45 - 49 = fair;
+		// 50 - 59 = average;
+		// 60 -69 = good;
+		// 70 - 100 = excellent;
+
+		// greater than 100 = out of range;
+		// less than 0 = out of range;
+		// hekodslglkjnnfmmfm = not a number; 
+
+        // var score = 0
+
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>
